@@ -5,19 +5,19 @@
 TEST(prefix_count, first) {
     auto table = Generator().GenerateTable(2, "fist second third");
     for (const auto& element : table) {
-        EXPECT_EQ(element.first.size(), nPref);
+        EXPECT_EQ(element.first.size(), 2);
     }
 }
 
 TEST(prefix_suffix_pair, pair) {
     auto table = Generator().GenerateTable(2, "first second third");
-    suffixes suf = table.begin()->second;
+    suffix suf = table.begin()->second;
     EXPECT_EQ(suf[0], "third");
 }
 
 TEST(prefix_suffix_pair, one_suffix) {
     auto table = Generator().GenerateTable(1, "first second");
-    suffixes suf = table.begin()->second;
+    suffix suf = table.begin()->second;
     EXPECT_EQ(suf[0], "second");
 }
 
