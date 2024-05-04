@@ -3,10 +3,7 @@
 #include <vector>
 #include "textgen.h"
 
-using namespace std;
-
-int main()
-{
+int main() {
     std::string text = ReadFile("data.txt");
     const int MAXGEN = 1000;
     const int NPREF = 2;

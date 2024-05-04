@@ -4,6 +4,7 @@
 #include <vector>
 #include <deque>
 #include <map>
+#include <string>
 
 typedef std::deque<std::string> prefix;
 typedef std::vector<std::string> suffix;
